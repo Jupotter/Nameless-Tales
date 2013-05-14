@@ -1,0 +1,15 @@
+syntax: glob
+
+*.exe
+[Tt]humbs.db
+obj/
+*.cache
+[Bb]in
+*.suo
+*~
+*.cachefile
+*.bak
+*.orig
+syntax: regexp
+/bin$
+/obj$

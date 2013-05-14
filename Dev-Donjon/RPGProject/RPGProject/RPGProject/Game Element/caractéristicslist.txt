@@ -1,0 +1,7 @@
+﻿strenght
+stamina
+mind
+wisdom
+luck
+vie
+mana

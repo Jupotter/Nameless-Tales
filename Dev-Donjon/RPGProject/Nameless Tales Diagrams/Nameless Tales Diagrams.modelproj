@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{514326c0-f902-4742-acc7-df9c97d091f6}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Nameless Tales Diagrams</Name>
+    <RootNamespace>Nameless Tales Diagrams</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="GestionCollisionAction.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GestionCollisionAction.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>GestionCollisionAction.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Nameless Tales Diagrams.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

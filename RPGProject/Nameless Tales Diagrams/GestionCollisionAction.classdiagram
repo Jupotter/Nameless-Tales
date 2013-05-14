@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f1da12e9-9e41-40a8-9c49-7230d012168c" name="GestionCollisionAction" linkedPackageId="1b34e981-a1c3-4864-ba18-0c46dedc024c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9c62283c-b3d3-4f6c-bd31-d552f622a495">
+      <profileInstance Id="9ad27885-c3fd-46a1-b8e3-c08e7b94181d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="816b5e65-96ed-4dbb-b680-ab1dba52c738">
+      <profileInstance Id="28a1749b-c3c3-442e-a490-9415c6d1ce99" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7b9af47f-672f-4fbd-9947-4fb286512ad9" name="Model" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="036910a6-0144-46cd-8f62-e860609d4fda" />
+        <targetEnds>
+          <association Id="d4d01bb0-bb34-47bd-ab7f-45710544c5c5" isDerived="false" sourceEndRoleName="Model" targetEndRoleName="GameObject" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c5d8daf-836d-4182-918f-f21ce35d70ae" LastKnownName="GameObject" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcb2bfca-0d75-49af-8e3f-a86dfd7f1f54" name="Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe0c27bb-4166-4351-9a92-4a86f77df783" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d14c03a8-2b3f-4570-9368-c1c4725424a1" name="GameObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3a462846-8e80-48eb-a1a2-f60d9476f7dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8113a677-91e9-47b6-95c5-c0aec46900e5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="60b36d46-7b74-4c29-bb4a-71d7f80f3ef0" name="Meshe" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c823f0fd-dbc5-4d5b-8d5e-b52cb92e3aab" />
+          </property>
+          <property Id="4fec6c5d-49c2-4fa2-bcea-d01dafdc1a09" name="GameObject Source" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1781174f-d422-4be3-a100-9112df56459f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="55d2cb41-79c3-4c49-a38a-b0948c603e58" name="CollideWith" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <description>Apelle le CollideWith du GameObject</description>
+            <elementDefinition Id="36ab6a12-0ee2-4e24-a296-afcf1d25dd7a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f06d1005-c46e-477b-bdc3-e76960067e6d" name="Model" direction="In" isUnique="false">
+                  <elementDefinition Id="510b0644-8c8f-4478-a780-54797beee486" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="33dc9f7c-4b2b-4098-b698-a1277567edf8" name="InteractedBy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f37ee6c-32f2-41ad-b31d-fffa10446409" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9fc20e9d-11a3-4e68-b8f8-4535d9271ecb" name="Creature" direction="In" isUnique="false">
+                  <elementDefinition Id="ce5eb952-f425-4c1d-9208-e531a19925de" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="92f39fd1-2ce7-4634-bbc3-870ae8f405b9" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="807370af-2fea-4617-a8f9-27a0793caf16" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2a30175a-91cc-43c4-a844-7cb42813fef1" name="GameTime" direction="In" isUnique="false">
+                  <elementDefinition Id="b6323338-818b-474e-bc25-8b20efcc3d75" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="740a607c-d11b-4449-b87f-9a74e6a7b4c6" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a334082-40cc-4ae3-940d-4a98471e67af" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="444c2c86-60f0-4999-96e9-4df03b5041c9" name="GameTime" direction="In" isUnique="false">
+                  <elementDefinition Id="54def953-08a4-46b9-afa8-3ef0ebb01f2d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c5d8daf-836d-4182-918f-f21ce35d70ae" name="GameObject" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f8113a69-5766-4e6f-b6cd-55a306db66ca" />
+        <generalsInternal>
+          <generalization Id="80b2cf12-f102-4754-97b7-5eca33a1db29" isSubstitutable="false">
+            <classMoniker Id="e6558b07-a4c9-4687-b2a4-10ec59a04cad" LastKnownName="Creature" />
+            <elementDefinition Id="53ed8734-b6f3-47ce-830d-90605203d542" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="0ff02f48-1db2-4eda-9bc7-d655ede771f5" isDerived="false" sourceEndRoleName="GameObject" targetEndRoleName="Model" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7b9af47f-672f-4fbd-9947-4fb286512ad9" LastKnownName="Model" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a74392f-a6eb-4c7a-b7d4-49eb84033f9d" name="GameObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b82aed5e-199c-461b-b113-7aca0c3f3d59" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="952325f4-2ac9-4ebd-934a-d51bffa2bef9" name="Model" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b3752f64-cbc6-4677-acff-c60b3db31585" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="66fbc1b6-ae7b-401f-9a1e-0708e011b6c8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ffc7d993-edaa-4124-80d1-12efcb893988" name="Model model" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="040314e8-391d-41a5-9c60-c3b4257336ad" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c3e38832-17a0-4786-b385-315c7baedcd3" name="CollideWith" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e95261d3-554b-4312-aaa8-cfa42cba0a3d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c38b9e77-0055-4056-87b5-c07f77bc8fd5" name="GameObject" direction="In" isUnique="false">
+                  <elementDefinition Id="0dda9359-de92-4ba8-9361-a90e74105b20" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b3a66260-12b1-47ee-8ba6-6e6142e0c241" name="InteractedBy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f6c67a31-04ea-4c51-98ba-d59668855a6d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4ac377d9-a362-4dc9-8b10-d9b5992052c6" name="Creature" direction="In" isUnique="false">
+                  <elementDefinition Id="d6490001-9141-4def-9221-a7dc037b1394" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e6558b07-a4c9-4687-b2a4-10ec59a04cad" name="Creature" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5265ed50-fde9-40c4-b865-a250da311387" />
+        <ownedAttributesInternal>
+          <property Id="3b9b54d5-0ace-4376-9b55-58b2f02db307" name="String Nom" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="42aa6bdd-a362-4192-ac38-7a0a340a49fc" />
+          </property>
+          <property Id="648e27b4-e583-48c4-9812-63ea6121dbb2" name="Race" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50d6d627-83d0-402d-a074-0c90531f332b" />
+          </property>
+          <property Id="3da61901-8ae5-4a4a-a514-1d3877c4c9fb" name="Caractéristiques" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2a135e1-443c-4d55-8122-557d04ab2c3c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="117084e4-cdb3-4061-83a3-a4439e281a5e" name="Attack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6b055f6-6a1c-4ab5-9af9-5ef26d498e6b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f637160b-4eef-41e7-883a-7a83826c6ec9" name="Creature" direction="In" isUnique="false">
+                  <elementDefinition Id="ba22afa0-8b8c-47b5-a3b3-8e06c09f865c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="07956c4c-b21d-48d7-b937-67574742fdec" name="IsAttacked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b47613a9-3672-4790-add4-6b5b9805870c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="248e5d4a-36fc-4389-ad6c-282660701aa8" name="Creature" direction="In" isUnique="false">
+                  <elementDefinition Id="e386daea-04d4-49ae-bb4e-ca1aa82a9fbf" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1b34e981-a1c3-4864-ba18-0c46dedc024c" name="Nameless Tales Diagrams">
+    <elementDefinition Id="4477828f-3a5a-4722-a51c-d4b8eff086b0" />
+  </package>
+</logicalClassDesignerModel>

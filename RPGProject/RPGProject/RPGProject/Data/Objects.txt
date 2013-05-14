@@ -1,0 +1,2 @@
+code|name|value|weight|takeable|modelname|codetexture
+0|hightpin|0|100|false|sapin|0

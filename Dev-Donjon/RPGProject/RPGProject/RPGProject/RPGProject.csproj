@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F0B8D310-6A1E-4F49-9771-382F2F83E4D2}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPGProject</RootNamespace>
+    <AssemblyName>RPGProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>6a919a49-a09a-4c95-8382-8c6c0f03c6f1</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="lua51, Version=0.0.0.0, Culture=neutral, PublicKeyToken=1e1fb15b02227b8a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lua51.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionKeyboard.cs" />
+    <Compile Include="Affichage Carte\GroundCell.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Dungeons\BSP.cs" />
+    <Compile Include="Dungeons\DungeonRoom.cs" />
+    <Compile Include="Dungeons\DungeonRoomDrawable.cs" />
+    <Compile Include="Dungeons\DungeonRoomDrawableGen.cs" />
+    <Compile Include="Dungeons\RoomGraph.cs" />
+    <Compile Include="Game Element\ActionMouse.cs" />
+    <Compile Include="Game Element\Characteristic.cs" />
+    <Compile Include="Game Element\Colision.cs" />
+    <Compile Include="GameConsole.cs" />
+    <Compile Include="Dungeons\Dungeon.cs" />
+    <Compile Include="Interface\EmplacementEquipement.cs" />
+    <Compile Include="Interface\FenetreStat.cs" />
+    <Compile Include="Interface\Infobulle.cs" />
+    <Compile Include="Interface\InventoryComponent.cs" />
+    <Compile Include="Interface\InventoryInterface.cs" />
+    <Compile Include="Interface\InventoryStockableInterface.cs" />
+    <Compile Include="LuaManager.cs" />
+    <Compile Include="MapGen\MapConverter.cs" />
+    <Compile Include="MapGen\MapVoronoi.cs" />
+    <Compile Include="MapGen\Voronoi.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Game Element\ModelComponent.cs" />
+    <Compile Include="Game Element\OnClick.cs" />
+    <Compile Include="Game Element\SaveLoad.cs" />
+    <Compile Include="Interface\ClickableArea.cs" />
+    <Compile Include="Game Element\Competence.cs" />
+    <Compile Include="Affichage Carte\DrawabeElement.cs" />
+    <Compile Include="Game Element\Faction.cs" />
+    <Compile Include="Interface\InterfaceBar.cs" />
+    <Compile Include="Interface\InterfaceComponnent.cs" />
+    <Compile Include="Game Element\Inventory.cs" />
+    <Compile Include="Game Element\Magic.cs" />
+    <Compile Include="Interface\Shortcut.cs" />
+    <Compile Include="MapGen\BiomeGen.cs" />
+    <Compile Include="MapGen\Erosion.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapGen\MidpntDisplmnt.cs" />
+    <Compile Include="Affichage Carte\DrawThings.cs" />
+    <Compile Include="Affichage Carte\Ground.cs" />
+    <Compile Include="Affichage Carte\LoadMap.cs" />
+    <Compile Include="MapGen\RainFall.cs" />
+    <Compile Include="Game Element\Object.cs" />
+    <Compile Include="MyGameComponent.cs" />
+    <Compile Include="Object and Interaction\Creature.cs" />
+    <Compile Include="Object and Interaction\GameObject.cs" />
+    <Compile Include="Object and Interaction\hitbox.cs" />
+    <Compile Include="Object and Interaction\ObjectModel.cs" />
+    <Compile Include="ObjectOnMap.cs" />
+    <Compile Include="Particle\CustomParticle.cs" />
+    <Compile Include="Particle\ExplosionParticleSystem.cs" />
+    <Compile Include="Particle\ExplosionSmokeParticleSystem.cs" />
+    <Compile Include="Particle\FireParticleSystem.cs" />
+    <Compile Include="Particle\ParticleEmitter.cs" />
+    <Compile Include="Particle\ParticleInit.cs" />
+    <Compile Include="Particle\ParticleManager.cs" />
+    <Compile Include="Particle\ParticleSettings.cs" />
+    <Compile Include="Particle\ParticleSystem.cs" />
+    <Compile Include="Particle\ParticleVertex.cs" />
+    <Compile Include="Particle\Projectile.cs" />
+    <Compile Include="Particle\ProjectileTrailParticleSystem.cs" />
+    <Compile Include="Particle\SmokePlumeParticleSystem.cs" />
+    <Compile Include="Game Element\Personnage.cs" />
+    <Compile Include="Physique\PhysicsGest.cs" />
+    <Compile Include="Interface\PlayerInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Affichage Carte\Tile.cs" />
+    <Compile Include="Skybox.cs" />
+    <Compile Include="Tools\Converters.cs" />
+    <Compile Include="Tools\Types.cs" />
+    <Compile Include="Tools\Quick.cs" />
+    <Compile Include="Trees.cs" />
+    <Compile Include="Water.cs" />
+    <Compile Include="WorldSpace.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\InventoryTexture.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\gameObject.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="lua51.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\01.pl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DicoObject.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\interfaceinit.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Objects.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Game Element\caractéristicslist.txt" />
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FortuneVoronoi\FortuneVoronoi.csproj">
+      <Project>{DDF5D740-6EE1-44BA-9DB9-782BF23E28D6}</Project>
+      <Name>FortuneVoronoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Luainterface\LuaInterface.csproj">
+      <Project>{F55CABBB-4108-4A39-94E1-581FD46DC021}</Project>
+      <Name>LuaInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPGProjectContent\RPGProjectContent.contentproj">
+      <Name>RPGProjectContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

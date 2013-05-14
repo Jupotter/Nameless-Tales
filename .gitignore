@@ -1,0 +1,12 @@
+*.exe
+[Tt]humbs.db
+obj/
+bin/
+*.cache
+[Bb]in
+*.suo
+*~
+*.cachefile
+*.bak
+*.orig
+.hg/
